@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  padding-top: 2em;
+  font-weight: 600;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  transition: all .5s ease-in-out;
+  width: 800px;
+  height: 400px;
+  margin-top: 2em;
+  border-radius: 70px;
+  box-shadow: -10px 10px 20px rgba(98, 98, 98, 0.2),
+              10px -10px 20px rgba(98, 98, 98, 0.2),
+              -10px -10px 20px rgba(255, 255, 255, 0.9),
+              10px 10px 25px rgba(98, 98, 98, 0.9);
+}
+
+.card:hover{
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3),
+              -1px -1px 2px rgba(98, 98, 98, 0.5);
+}
+
+.first{
+  background-image: url('../img/aula-cover-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.second{
+  background-image: url('../img/radar-cover-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.third{
+  background-image: url('../img/decolando-cover-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first:hover{
+  background-image: url('../img/aula-cover-img-hover.png');
+}
+
+.second:hover{
+  background-image: url('../img/radar-cover-img-hover.png');
+}
+
+.third:hover{
+  background-image: url('../img/decolando-cover-img-hover.png');
+}
+
+.footer{
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eb7522;
+  margin-top: 2em; 
+}
+
+.socialLinks{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.socialIcons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #f67f29, #cf6b22);
+  box-shadow:  7px 7px 14px #c46520,
+              -7px -7px 14px #ff892c;;
+  transition: all 2s ease-in-out;
+}
+
+.socialIcons:hover{
+  background: #E67726;
+  box-shadow: inset 7px 7px 14px #c46520,
+              inset -7px -7px 14px #ff892c;
+}
+
+.socialIcons img{
+  width: 20px;
+}
+
+@media screen and (max-width:850px){
+  .card{
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width:650px){
+  .card{
+    width: 400px;
+    height: 200px;
+    border-radius: 40px;
+  }
+}
+
+@media screen and (max-width:450px){
+  .card{
+    width: 200px;
+    height: 100px;
+    border-radius: 25px;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+
+  h1{
+    font-size: 23px;
+  }
+
+  h4{
+    font-size: 13px;
+  }
+}
