@@ -6,8 +6,44 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #664A3A;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 1);
+}
+
+body{
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.perfil{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+.perfil img {
+  margin: 2em auto;
+  width: 200px;
+  height: 200px;
+}
+
 h1{
-  padding-top: 2em;
+  text-align: center;
+  color: white;
   font-weight: 600;
 }
 
@@ -19,59 +55,43 @@ h1{
 }
 
 .card{
-  transition: all .5s ease-in-out;
   width: 800px;
   height: 400px;
-  margin-top: 2em;
+  margin-top: 5em;
   border-radius: 70px;
-  box-shadow: -10px 10px 20px rgba(98, 98, 98, 0.2),
-              10px -10px 20px rgba(98, 98, 98, 0.2),
-              -10px -10px 20px rgba(255, 255, 255, 0.9),
-              10px 10px 25px rgba(98, 98, 98, 0.9);
+  box-shadow: none;
+  transition: all 2s ease-in-out;
 }
 
 .card:hover{
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3),
-              -1px -1px 2px rgba(98, 98, 98, 0.5);
+  box-shadow: 10px 10px 10px rgba(255,255,255,0.6),
+              -10px -10px 10px rgba(255,255,255,0.6);
 }
 
 .first{
-  background-image: url('../img/aula-cover-img.png');
+  background-image: url('../img/nosso-trabalho.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .second{
-  background-image: url('../img/radar-cover-img.png');
+  background-image: url('../img/agendamento.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .third{
-  background-image: url('../img/decolando-cover-img.png');
+  background-image: url('../img/duvidas-gerais.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.first:hover{
-  background-image: url('../img/aula-cover-img-hover.png');
-}
-
-.second:hover{
-  background-image: url('../img/radar-cover-img-hover.png');
-}
-
-.third:hover{
-  background-image: url('../img/decolando-cover-img-hover.png');
-}
-
 .footer{
+  color: white;
   height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #eb7522;
   margin-top: 2em; 
 }
 
@@ -87,17 +107,13 @@ h1{
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
-  background: linear-gradient(145deg, #f67f29, #cf6b22);
-  box-shadow:  7px 7px 14px #c46520,
-              -7px -7px 14px #ff892c;;
-  transition: all 2s ease-in-out;
+  border-radius: 10px;
+  background: #674C3B;
+  transition: all .5s ease-in-out;
 }
 
 .socialIcons:hover{
-  background: #E67726;
-  box-shadow: inset 7px 7px 14px #c46520,
-              inset -7px -7px 14px #ff892c;
+  background: #BFA18E;
 }
 
 .socialIcons img{
@@ -108,6 +124,10 @@ h1{
   .card{
     width: 600px;
     height: 300px;
+  }
+  .perfil img {
+    width: 100px;
+    height: 100px;
   }
 }
 
